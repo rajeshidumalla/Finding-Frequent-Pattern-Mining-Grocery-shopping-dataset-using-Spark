@@ -1,5 +1,18 @@
 # Finding Frequent Pattern Mining (Grocery shopping dataset) using Spark
 
+
+Frequent Pattern Mining (AKA Association Rule Mining) is an analytical process that finds frequent patterns, associations, or causal structures from data sets found in various kinds of databases such as relational databases, transactional databases, and other data repositories. Given a set of transactions, this process aims to find the rules that enable us to predict the occurrence of a specific item based on the occurrence of other items in the transaction.
+
+Let’s look at an example of Frequent Pattern Mining. First, we will want to understand the terminology used in this type of analysis. While there are numerous metrics and factors used in this technique, for this example, we will only consider two factors namely, Support and Confidence.
+
+Support: The support of a rule x -> y (where x and y are each items/events etc.) is defined as the proportion of transactions in the data set which contain the item set x as well as y. So, Support (x -> y)= no. of transactions which contain the item set x & y / total no. of transactions.
+
+Confidence: The confidence of a rule x -> y is defined as: Support (x -> y) / support (x). So, it is the ratio of the number of transactions that include all items in the consequent (y in this case), as well as the antecedent (x in this case) to the number of transactions that include all items in the antecedent (x in this case).
+
+In the table below, Support (milk->bread) = 0.4 means milk and bread are purchased together occur in 40% of all transactions. Confidence (milk->bread) = 0.5 means that if there are 100 transactions containing milk then there will be 50 that will also contain bread.
+
+![](https://github.com/rajeshidumalla/Finding-Frequent-Pattern-Mining-Grocery-shopping-dataset-using-Spark/blob/main/Screen%20Shot%202021-10-07%20at%202.30.48%20pm.png)
+
 ## Setup
 Let's setup Spark on your Colab environment. Run the cell below!
 
