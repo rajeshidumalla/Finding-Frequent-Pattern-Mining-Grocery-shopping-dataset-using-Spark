@@ -9,7 +9,7 @@ Support: The support of a rule x -> y (where x and y are each items/events etc.)
 
 Confidence: The confidence of a rule x -> y is defined as: Support (x -> y) / support (x). So, it is the ratio of the number of transactions that include all items in the consequent (y in this case), as well as the antecedent (x in this case) to the number of transactions that include all items in the antecedent (x in this case).
 
-In the table below, Support (milk->bread) = 0.4 means milk and bread are purchased together occur in 40% of all transactions. Confidence (milk->bread) = 0.5 means that if there are 100 transactions containing milk then there will be 50 that will also contain bread.
+In the table below, Support (milk->bread) = 0.4 means milk and bread are purchased together occur in 40% of all transactions. Confidence (milk->bread) = 0.5 means that if there are 100 transactions containing milk then there will be 50 that will also contain bread[(Source)](https://www.dataversity.net/frequent-pattern-mining-association-support-business-analysis/).
 
 ![](https://github.com/rajeshidumalla/Finding-Frequent-Pattern-Mining-Grocery-shopping-dataset-using-Spark/blob/main/Screen%20Shot%202021-10-07%20at%202.30.48%20pm.png)
 
